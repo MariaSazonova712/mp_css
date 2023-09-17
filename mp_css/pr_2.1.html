@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Селекторы</title>
+    <meta charset="UTF-8">
+<link rel="stylesheet" type ="text/css"href="css/css2/style2.css">
+</head>
+<body>
+    <h3>Балтонские языки</h3>
+    <ol id="languages">
+        <li>Славянские языки
+            <ol>
+                <li>Славянские микроязыки</li>
+                <li>Прваславянский язык</li>
+                <li id="e-slavic">Восточнославянские языки <code>#e-slavic</code></li>
+                <li>Западнослвянские языки <code>#e-slavic~ li</code></li>
+                <li> ... <code>#e-slavic ~ li</code></li>
+            </ol>
+        </li>
+        <li>Балтийские языки</li>
+        <ol>
+            <li>Литовский язык</li>
+            <li id="latvian">Латышский язык <code>#latvian</code>
+                <ol>
+                    <li>Латгальский язык <code>#latvian *</code></li>
+                </ol>
+            </li>
+            <li>Прусский язык <code>#latvian + li</code></li>
+            <li> ... (следущий элемент уже не <code>#latvian+ li</code>)</li>
+        </ol>
+    </li>
+</ol>
+</body>
+</html>
